@@ -15,7 +15,6 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import {
-  selectContacts,
   selectContactsIsLoading,
   selectFilter,
   selectVisibleContacts,
@@ -31,7 +30,6 @@ const ContactsPage = () => {
   const { register, handleSubmit, reset } = useForm();
   const dispatch = useDispatch();
   const visibleContacts = useSelector(selectVisibleContacts);
-  const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectContactsIsLoading);
 
   useEffect(() => {
