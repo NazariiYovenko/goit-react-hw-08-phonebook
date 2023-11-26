@@ -41,6 +41,7 @@ const appRoutes = [
       </PrivateRoute>
     ),
   },
+  { path: '/*', element: <HomePage /> },
 ];
 
 export const App = () => {
