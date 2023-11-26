@@ -9,7 +9,6 @@ export const setToken = token => {
 };
 
 export const requestRegister = async formData => {
-  // formData - {email: "adwad@gmail.com", password: "123456788", name: "Oleg"}
   const { data } = await phonebookInstance.post('/users/signup', formData);
   setToken(data.token);
 
@@ -17,7 +16,6 @@ export const requestRegister = async formData => {
 };
 
 export const requestLogin = async formData => {
-  // formData - {email: "adwad@gmail.com", password: "123456788"}
   const { data } = await phonebookInstance.post('/users/login', formData);
   setToken(data.token);
 

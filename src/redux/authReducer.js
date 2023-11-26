@@ -135,7 +135,6 @@ const authSlice = createSlice({
         (state, action) => {
           state.isLoading = false;
           state.error = action.payload;
-          alert(action.payload);
         }
       ),
 });
